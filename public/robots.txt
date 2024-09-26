@@ -1,0 +1,9 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+# Disallow:
+
+Sitemap: https://www.fastwin.ph/sitemap.xml
+Crawl-delay:1
+
+Disallow: /files/
+Disallow: /static/

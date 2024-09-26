@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#background::before {
+  background: url('./assets/img/background-FW.png') no-repeat;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  bottom: 0;
+  height: 100%;
+  content: '';
+  z-index: -1;
+  position: fixed;
+  background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+}
+
+/* - - - - - - - - - - REG MODAL - - - - - - - - - - */
+.form-control{
+  background-color: #E2E2E3;
+}
+.form-control2{
+  background-color: #E2E2E3;
+  color: #000000;
+  padding: 5px 5px 5px 5px;
+  border: none;
+  border-radius: 2px;
+}
+:index ~ .hidden{
+  display: none;
+}
+.swal2-container{
+  z-index: 2000 !important;
+}
+
+.MuiDialogContent-root{
+  background-color: transparent;
+}
+
+.modal-position{
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+}
+.regdialog{
+  background-color: none !important;
+  border: none !important;
+}
+
+@media screen and (max-width: 760px){
+  .style{
+    width: 95% !important;
+    overflow: scroll;
+  }
+  .bigreg{
+    overflow: scroll !important;
+    height: 60% !important; 
+  }
+  .leftregbutt{
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+  }
+  .leftregbutt .btn{
+    width: 100%;
+  }
+  .autoResize{
+    width: 90% !important;
+  }
+}
+
+@media (min-width: 1300px) and (max-width: 1368px){
+  .autoResize{
+    width: 75% !important;
+    height: 65% !important;
+  }
+}
+
+/* - - - - - - - - - - PROMOTIONS - - - - - - - - - - */
+.promo-title{
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+.MuiDrawer-paper.MuiDrawer-paperAnchorLeft{
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+.MuiPaper-elevation4.MuiAppBar-root {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.menu-button {
+ color: rgb(209 213 219);
+}
+
+.menu-button:hover {
+  background-color: rgb(194 65 12);
+}
+
+.is-active {
+  background-color: rgb(194 65 12) !important;
+}
+
+.banners-web {
+  display: block;
+}
+
+.banners-tablet {
+  display: none !important;
+}
+
+.banners-mobile {
+  display: none !important;
+}
+
+.banners-i {
+  border-radius: 10px;
+}
+
+.join-today {
+  font-size: 2rem !important;
+}
+
+.having-fun {
+  font-size: 1rem;
+}
+
+.circle {
+  width: 72px;
+  height: 72px;
+  line-height: 72px;
+  border-radius: 50%;
+  font-size: 40px;
+  color: #FF2020;
+  text-align: center;
+  background: #FFFFFF;
+}
+
+.card-content {
+  background-color: rgb(107 114 128);
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .6s ease;
+  padding: 0 5px;
+  border-radius: 10px;
+}
+/* para di center si table games in home */
+.slick-track{
+  margin-left: 0px !important;
+}
+
+.hovers {
+  position: relative;
+}
+
+.middle {
+  /* transition: .6s ease; */
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hovers:hover .image {
+  opacity: 0.3;
+}
+
+.hovers:hover .middle {
+  opacity: 1;
+}
+
+.hovers:hover .game-n {
+  visibility: visible;
+  transition: .8s ease;
+}
+
+.hovers:hover .game-p {
+  visibility: visible;
+  transition: .8s ease;
+}
+
+.game-n {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  visibility: hidden;
+  color: #fff;
+  font-size: 15px;
+}
+
+.game-p {
+  position: absolute;
+  bottom: 1%;
+  left: 10%;
+  visibility: hidden;
+  color: #fff;
+  font-size: 14px;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.footer-background {
+  background-color: rgba(255, 255, 255, 0.86);
+  color: #0E1B51;
+}
+
+.MuiSvgIcon-root.MuiSvgIcon-fontSizeSmall {
+  background-color: rgba(255, 255, 255, 0.86);
+}
+
+.slick-slider.slick-initialized {
+  margin: auto !important;
+}
+
+.provider-image {
+  width: 80%;
+}
+
+.payment-image {
+  width: 100%;
+}
+
+.launcher {
+  position: relative;
+  border-radius: 10px;
+  width: 100%;
+  height: 80vh;
+}
+
+@media (min-width: 1000px) and (max-width: 1700px) {
+  .game-n {
+    font-weight: 500;
+    font-size: 12px;
+  }
+  
+  .game-p {
+    font-weight: 500;
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1000px) {
+  .banners-web {
+    display: none !important;
+  }
+  
+  .banners-tablet {
+    display: block !important;
+  }
+
+  .banners-mobile {
+    display: none !important;
+  }
+
+  .join-today {
+    font-size: 1.2rem !important;
+  }
+
+  .game-n {
+    font-weight: 500;
+    font-size: 12px;
+  }
+  
+  .game-p {
+    font-weight: 500;
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 600px) {
+  .banners-web {
+    display: none !important;
+  }
+  
+  .banners-tablet {
+    display: none !important;
+  }
+  
+  .banners-mobile {
+    display: block !important;
+  }
+  .join-today {
+    font-size: 1.2rem !important;
+  }
+
+  .game-n {
+    font-weight: 500;
+    font-size: 12px;
+  }
+  
+  .game-p {
+    font-weight: 500;
+    font-size: 12px;
+  }
+
+  .title {
+    font-size: small !important;
+  }
+
+  .text {
+    font-size: small !important;
+  }
+
+  .circle {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    font-size: 22px;
+    color: #FF2020;
+    text-align: center;
+    background: #FFFFFF;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 899px) {
+  .MuiDrawer-paper.MuiDrawer-paperAnchorLeft{
+    background-color: rgb(3 7 18);
+  }
+}

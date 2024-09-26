@@ -1,0 +1,12 @@
+RewriteEngine on
+RewriteRule ^welcombonus$ index.html [NC]
+RewriteRule ^promotions$ index.html [NC]
+RewriteRule ^table$ index.html [NC]
+RewriteRule ^ibingo$ index.html [NC]
+RewriteRule ^slot$ index.html [NC]
+RewriteRule ^live$ index.html [NC]
+RewriteRule ^virtual$ index.html [NC]
+RewriteRule ^faq$ index.html [NC]
+RewriteRule ^responsible-gaming$ index.html [NC]
+RewriteRule ^terms-and-conditions$ index.html [NC]
+RewriteRule ^launcher$ index.html [NC]
